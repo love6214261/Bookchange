@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BookChange</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../../assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="../../../assets/css/sweetalert2.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<script src="../../../assets/Js/sweetalert2.js"></script>
+<script src="../../../assets/Js/JQuery.js"></script>
+<script src="../../../assets/Js/JQuery2.0.js"></script>
+<script src="../../../assets/Js/bootstrap.min.js"></script>
+<script src="../../../assets/Js/jquery.blockUI.js"></script>
+<script src="../../Js/active.js"></script>
+
+
+<body>
+<!--Navbar-->
+<div id="header"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-2">
+            <div id="memberLink"></div>
+        </div>
+        <div class="col-sm-12 col-md-8">
+            <h1>開通帳號</h1>
+
+            <table class="table table-striped">
+                <tr>
+                    <th>驗證碼：</th>
+                    <td><input type="text" id="veryNum" placeholder="請輸入驗證碼"></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td><button onclick="active()">送出驗證碼</button></td>
+                    <td><button onclick="">再寄一次</button></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+</div>
+<div id="footer"></div>
+</body>
+</html>

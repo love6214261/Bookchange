@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BookChange</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../../assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+</head>
+<script src="../../../assets/Js/JQuery.js"></script>
+<script src="../../../assets/Js/JQuery2.0.js"></script>
+<script src="../../../assets/Js/bootstrap.min.js"></script>
+<script src="../../Js/memberCommon.js"></script>
+<script src="../../Js/buyer.js"></script>
+<script>window.onload = trading();</script>
+<body>
+<!--Navbar-->
+<div id="header"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-2">
+            <div id="memberLink"></div>
+        </div>
+        <div class="col-sm-12 col-md-8">
+            <div role="tabpanel">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a onclick="trading()" aria-controls="matching" role="tab"
+                           data-toggle="tab">交易中</a></li>
+                    <li role="presentation"><a onclick="evaluating()" aria-controls="selled" role="tab"
+                                               data-toggle="tab">評價中</a></li>
+                    <li role="presentation"><a onclick="tradeCompleted()" aria-controls="bought" role="tab"
+                                               data-toggle="tab">交易成功</a></li>
+                    <li role="presentation"><a onclick="tradeFailed()" aria-controls="bought" role="tab"
+                                               data-toggle="tab">交易失敗</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <h3>購買訂單管理</h3>
+                    <table class="table">
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<div id="footer"></div>
+
+</body>
+</html>

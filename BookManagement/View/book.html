@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BookChange</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="../../assets/css/sweetalert2.css" rel="stylesheet" type="text/css"/>
+</head>
+<script src="../../assets/Js/sweetalert2.js"></script>
+<script src="../../assets/Js/JQuery.js"></script>
+<script src="../../assets/Js/JQuery2.0.js"></script>
+<script src="../../assets/Js/bootstrap.min.js"></script>
+<script src="../../assets/Js/commonJS.js" ;></script>
+<script src="../Js/BookManagement.js" ;></script>
+<body>
+<!--Navbar-->
+<div id="header"></div>
+<!--浮動式廣告-->
+<!-- <div id="abgne_float_ad" style="z-index:100;">
+    <span class="abgne_close_ad">縮小廣告 [-]</span>
+    <div id="ADPicDIV">
+        <h4><a style="color: darkblue;">今日推薦!</a></h4>
+        <img src="" id="ADPic" onclick="" style="width: 100px; height: 100px;"/>
+    </div>
+    </a>
+</div> -->
+
+<form id="searchbox" align="center" action="">
+    <ul>
+        <select id="select" name="select">
+            <option value="book_name">書名</option>
+            <option value="publishingHouse">出版社</option>
+            <option value="author">作者</option>
+        </select>
+        <input id="search" type="text" placeholder="想找甚麼書?">
+        <input type="button" class="btn-danger" value="search" onclick="Search()">
+    </ul>
+</form>
+
+<h1 align="center">為了環保，請支持二手書流通!<br/></h1>
+<hr>
+<!-- <img src="../../assets/image/google_maps.png" style="height: 20px; width: 20px;">系所地圖  </img> -->
+<!-- <div class="Sidebar hidden-xs">
+
+    <div class="itemSide">
+            <span class="glyphicon glyphicon-map-marker">
+                系所地圖
+              </span>
+    </div>
+    <div class="itemSide active">
+        <span class="glyphicon glyphicon-book"></span>
+        <a href="courseMap/mismap.html" style="color: floralwhite; ">資管系</a>
+    </div>
+    <div class="itemSide">
+        <span class="glyphicon glyphicon-book"></span>
+        企管系
+    </div>
+
+    <div class="itemSide">
+        <span class="glyphicon glyphicon-book"></span>
+        經濟系
+    </div>
+    <div class="itemSide">
+        <span class="glyphicon glyphicon-book"></span>
+        產經所
+    </div>
+    <div class="itemSide">
+        <span class="glyphicon glyphicon-book"></span>
+        人資所
+    </div>
+    <div class="itemSide">
+        <span class="glyphicon glyphicon-book"></span>
+        工管所
+    </div>
+    <div class="itemSide">
+        <span class="glyphicon glyphicon-book"></span>
+        會研所
+    </div>
+</div> -->
+<div class="container">
+    <div class="col-md-10 col-xs-12">
+        <form>
+            <table class="table">
+                <tr>
+                    <th id="bookCover">書籍封面</th>
+                    <th id="bookName">書名</th>
+                    <th id="author">作者</th>
+                    <th id="publishinghouse">出版社</th>
+                    <th id="twoprice">二手價格</th>
+                    <th>       </th>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+    <nav align="center">
+        <ul class="pagination" id="page">
+
+        </ul>
+    </nav>
+</div>
+<!-- 7/19改
+<div class="table-responsive">
+
+    <table class="table" id="table">
+
+        <tr>
+            <th id="bookCover">書籍封面</th>
+            <th id="bookName">書籍名稱</th>
+            <th id="isbn">ISBN</th>
+            <th id="author">作者</th>
+            <th id="price">價格</th>
+            <th></th>
+
+        </tr>
+
+        </table>
+    </div>
+-->
+</body>
+</html>

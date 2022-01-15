@@ -1,0 +1,443 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>台灣囝仔二手書網</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../../assets/css/bootstrap.css" rel="stylesheet" type ="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
+</head>
+
+<script src="../../../assets/Js/JQuery.js"></script>
+<script src="../../../assets/Js/JQuery2.0.js"></script>
+<script src="../../../assets/Js/bootstrap.min.js"></script>
+<script src="../../../assets/Js/commonJS.js"></script>
+
+<script>window.onload = getBookArray();</script>
+
+<script>
+    $(function () {
+        /* BOOTSNIPP FULLSCREEN FIX */
+        if (window.location == window.parent.location) {
+            $('#back-to-bootsnipp').removeClass('hide');
+            $('.alert').addClass('hide');
+        }
+
+        $('#fullscreen').on('click', function(event) {
+            event.preventDefault();
+            window.parent.location = "http://bootsnipp.com/iframe/Q60Oj";
+        });
+
+        $('tbody > tr').on('click', function(event) {
+            event.preventDefault();
+            $('#myModal').modal('show');
+        })
+
+        $('tbody > tr').on('click', function(event) {
+            event.preventDefault();
+            $('#myModal1').modal('show');
+        })
+
+        $('.btn-mais-info').on('click', function(event) {
+            $( '.open_info' ).toggleClass( "hide" );
+        })
+
+
+    });
+
+
+
+
+</script>
+<style>
+    @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+tbody > tr {
+    cursor: pointer;
+}
+
+.result{
+    margin-top:20px;
+}</style>
+<div>
+<!--Navbar-->
+<div id="header"></div>
+
+<form id="searchbox" align="center" action="">
+    <ul>
+        <select id="searchselect">
+            <option>書名</option>
+            <option>出版社</option>
+            <option>作者</option>
+        </select>
+        <input id="search" type="text" placeholder="想找甚麼書?">
+        <input type="button" value="search" onclick="Search()">
+    </ul>
+</form>
+<h1 align="center">資管系各年級用書</h1>
+<h2 align="center">為了環保，請支持校內二手書流通!<br/></h2>
+<p align="center">沒事多喝水，有事多上廁所</p>
+<hr>
+<div role="tabpanel">
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#freshman" aria-controls="freshman" role="tab" data-toggle="tab">一年級</a></li>
+        <li role="presentation"><a href="#sophomore" aria-controls="sophomore" role="tab" data-toggle="tab">二年級</a></li>
+        <li role="presentation"><a href="#junior" aria-controls="junior" role="tab" data-toggle="tab">三年級</a></li>
+        <li role="presentation"><a href="#senior" aria-controls="senior" role="tab" data-toggle="tab">四年級</a></li>
+        <li role="presentation"><a href="#senior" aria-controls="senior" role="tab" data-toggle="tab">系選修</a></li>
+
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <br>
+
+        <div role="tabpanel" class="tab-pane active" id="freshman">
+
+
+            <div class="container">
+                <ul class="pagination pull-left">
+
+                    <li><a href="#">上學期</a></li>
+                    <li><a href="#">下學期</a></li>
+
+                </ul>
+                <table class="table  table-hover  table-responsive   table-bordered ">
+                    <thead>
+                    <tr>
+                        <th>午別</th>
+                        <th>節次</th>
+                        <th>星期一</th>
+                        <th>星期二</th>
+                        <th>星期三</th>
+                        <th>星期四</th>
+                        <th>星期五</th>
+                        <th>星期六</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+
+                        <tr>
+                            <td rowspan="4"><br><br>上午<br></td>
+                            <td>第一節</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>第二節</td>
+                            <td>會計學</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>第三節</td>
+                            <td>會計學</td>
+                            <td></td>
+                            <td>大一英文</td>
+                            <td></td>
+                            <td>大一國文</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>第四節</td>
+                            <td>會計學</td>
+                            <td></td>
+                            <td>大一英文</td>
+                            <td></td>
+                            <td>大一國文</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">午休</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4"><br><br>下午</td>
+                            <td>第五節</td>
+                            <td></td>
+                            <td>大一英文</td>
+                            <td>大一國文</td>
+                            <td>微積分</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>第六節</td>
+                            <td>初階程式設計</td>
+                            <td></td>
+                            <td>計算機概論</td>
+                            <td>微積分</td>
+                            <td>企業概論</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>第七節</td>
+                            <td>初階程式設計</td>
+                            <td></td>
+                            <td>計算機概論</td>
+                            <td>微積分</td>
+                            <td>企業概論</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>第八節</td>
+                            <td>初階程式設計</td>
+                            <td></td>
+                            <td>計算機概論</td>
+                            <td></td>
+                            <td>企業概論</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>晚上</td>
+                            <td>第九節</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+            </div>
+    </div>
+        <!-- Modal -->
+        <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="text-danger fa fa-times"></i></button>
+                        <h4 class="modal-title" id="myModalLabel"><i class="text-muted fa fa-shopping-cart"></i> <strong>MT1031 - E</strong> 教科書資訊 </h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <table class="pull-left col-md-8 table-border table table-responsive ">
+                            <tbody>
+                            <tr>
+                                <th>書籍封面</th>
+                                <th>書名</th>
+                                <th>作者</th>
+                                <th>出版社</th>
+                                <th>版次</th>
+                                <th>ISBN</th>
+                                <th></th>
+
+                            </tr>
+                            <tr>
+                                <td>範例</td>
+                                <td>會計學</td>
+                                <td>三田詠美</td>
+                                <td>大田出版社</td>
+                                <td>third edition</td>
+                                <td>1234567</td>
+                                <td><button><a href="#">了解更多</a></button></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="col-md-4">
+
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <p class="open_info hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fim Modal-->
+
+        <div role="tabpanel" class="tab-pane " id="sophomore"> <div class="container">
+            <ul class="pagination pull-left">
+
+                <li><a href="#">上學期</a></li>
+                <li><a href="#">下學期</a></li>
+
+            </ul>
+            <table class="table  table-hover  table-responsive   table-bordered ">
+                <thead>
+                <tr>
+                    <th>午別</th>
+                    <th>節次</th>
+                    <th>星期一</th>
+                    <th>星期二</th>
+                    <th>星期三</th>
+                    <th>星期四</th>
+                    <th>星期五</th>
+                    <th>星期六</th>
+                </tr>
+                </thead>
+                <tbody>
+
+
+                <tr>
+                    <td rowspan="4"><br><br>上午<br></td>
+                    <td>第一節</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>第二節</td>
+                    <td>經濟學</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>第三節</td>
+                    <td>經濟學</td>
+                    <td></td>
+                    <td>大二歷史</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>第四節</td>
+                    <td>經濟學</td>
+                    <td></td>
+                    <td>大二歷史</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="2">午休</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td rowspan="4"><br><br>下午</td>
+                    <td>第五節</td>
+                    <td></td>
+                    <td>大二歷史</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>第六節</td>
+                    <td>系統程式與開發</td>
+                    <td></td>
+                    <td>統計學</td>
+                    <td></td>
+                    <td>資料庫管理</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>第七節</td>
+                    <td>系統程式與開發</td>
+                    <td></td>
+                    <td>統計學</td>
+                    <td></td>
+                    <td>資料庫管理</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>第八節</td>
+                    <td>系統程式與開發</td>
+                    <td></td>
+                    <td>統計學</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>晚上</td>
+                    <td>第九節</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div></div>
+        <!-- Modal -->
+        <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="text-danger fa fa-times"></i></button>
+                        <h4 class="modal-title" id="myModalLabel"><i class="text-muted fa fa-shopping-cart"></i> <strong>MT1031 - E</strong> 教科書資訊 </h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <table class="pull-left col-md-8 table-border table table-responsive ">
+                            <tbody>
+                            <tr>
+                                <th>書籍封面</th>
+                                <th>書名</th>
+                                <th>作者</th>
+                                <th>出版社</th>
+                                <th>版次</th>
+                                <th>ISBN</th>
+                                <th></th>
+
+                            </tr>
+                            <tr>
+                                <td>範例</td>
+                                <td>會計學</td>
+                                <td>三田詠美</td>
+                                <td>大田出版社</td>
+                                <td>third edition</td>
+                                <td>1234567</td>
+                                <td><button><a href="#">了解更多</a></button></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="col-md-4">
+
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <p class="open_info hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fim Modal-->
+        <div role="tabpanel" class="tab-pane" id="junior"></div>
+        <div role="tabpanel" class="tab-pane" id="senior">
+
+
+
+    </div>
+
+
+
+</div>
+
+
+<div id="footer"></div>
+</body>
+</html>

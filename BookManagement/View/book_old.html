@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>台灣囝仔二手書網</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet" type ="text/css"/>
+</head>
+<script src="../../assets/Js/JQuery.js"></script>
+<script src="../../assets/Js/JQuery2.0.js"></script>
+<script src="../../assets/Js/commonJS.js";></script>
+<script src="../Js/BookManagement.js";></script>
+<script>window.onload = getBookArray();</script>
+<body>  
+    <!--Navbar-->
+   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+       
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" onclick="showIndex()">台灣囝仔</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-left">
+        <li><a href="event.html">活動專區</a></li>
+        <li><a href="bestsell.html">熱銷排行</a></li>
+        <li><a href="wantlist.html">許願池</a></li>
+        <li><a href="upload.html">我要賣書</a></li> 
+        
+    </ul>
+      <ul class="nav navbar-nav navbar-right">
+          <li><p id="name" style="font-size: large "></p></li>
+          <li><a onclick="ShowLoginPage()" id="loginButton" >登入</a></li>
+          <li><a onclick="ShowSignUpPage()" id="signUpButton">註冊</a></li>
+          <li><a onclick="showIndex()">回到首頁</a><li>
+
+      </ul>
+        
+    </div><!-- /.navbar-collapse -->
+        
+  </div><!-- /.container-fluid -->
+       
+</nav>
+    <div class="table-responsive">
+
+        <table class="table" id="table">
+
+            <tr>
+                <th id="bookCover">書籍封面</th>
+                <th id="bookName">書籍名稱</th>
+                <th id="ISBN">ISBN</th>
+                <th id="author">作者</th>
+                <th id="price">價格</th>
+                <th></th>
+
+            </tr>
+
+            </table>
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <script src="../../assets/Js/JQuery.js"></script>
+    <script src="../../assets/Js/commonJS.js"></script>
+    <script src="../Js/Main.js"></script>
+    <script src="../../assets/Js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="inner " id="footer">
+        <section>
+            <h2>買賣流程</h2>
+            <div class="tradeprocess">
+                <li><a href="">第一次買書</a></li>
+                <li><a href="">第一次賣書</a></li>
+                <li><a href="">會員註冊流程</a></li>
+                <!--<li><a href="../../MainPage/MainPageController.php?action=ShowWelcomePage">網站導覽</a></li>-->
+            </div>
+        </section>
+        <section>
+            <h2>About us</h2>
+            <ul class="aboutus">
+                <li><a href="" style="text-decoration:none">關於我們</a></li>
+                <button  id="collapsebutton" type="button" class="btn btn-link"  data-toggle="collapse" data-target="#serversmail" aria-expanded="true" aria-controls="serversmail">
+                    客服信箱
+                </button>
+                <div id="serversmail" class="collapse ">bookChange@gmail.com</div>
+                <br>
+                <button id="collapsebutton" type="button" class="btn btn-link" data-toggle="collapse" data-target="#serverstime" aria-expanded="true" aria-controls="serverstime">
+                    服務時間
+                </button>
+                <div id="serverstime" class="collapse ">09:00-17:00</div>
+            </ul>
+        </section>
+        <section>
+            <h2>Rule</h2>
+            <ul class="rule">
+                <!--<li><a onclick="showPrivacy()">隱私權條款</a></li>-->
+                <!--<li><a onclick="ShowUserLaw()">使用者條款及規範</a></li>-->
+                <li><a href="../../ContactUs/ContactUsController.php?action=ShowContactForm">聯絡我們</a></li>
+            </ul>
+        </section>
+        <ul class="copyright" align="center">
+            <li>&copy; Book Change. All rights reserved</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

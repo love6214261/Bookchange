@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>台灣囝仔二手書網</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/chatstyle.css" rel="stylesheet" type="text/css"/>
+    <link href="../../assets/css/sweetalert2.css" rel="stylesheet" type="text/css"/>
+</head>
+    <script src="../../assets/Js/sweetalert2.js"></script>
+    <script src="../../assets/Js/JQuery.js"></script>
+    <script src="../../assets/Js/JQuery2.0.js"></script>
+    <script src="../../assets/Js/commonJS.js"></script>
+    <script src="../../MainPage/Js/Main.js"></script>
+    <script src="../../assets/Js/bootstrap.min.js"></script>
+    <script src="../Js/jquery.ui.chatbox.js"></script>
+    <script src="../Js/ChatroomConfirm.js"></script>
+    <script src="../Js/ChatUpload.js"></script>
+
+<body>
+<!--Navbar-->
+<div id="header"></div>
+
+
+<h1 align="center">為了環保，請支持校內二手書流通!<br/></h1>
+<p align="center">沒事多喝水，有事多上廁所</p>
+<hr>
+<!--交易流程-->
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-4">
+            <div class="thumbnail">
+                <h4 style="text-align:center">
+                    Step1 </br>
+                    開啟聊天室，約定面交事宜
+                </h4>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <div class="thumbnail">
+                <div class="caption bg-success" style="text-align:center">
+                    Step2 </br>
+                    交易結束，按下結束交易鈕
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <div class="thumbnail">
+                <h4 style="text-align:center">
+                    Step3 </br>
+                    在會員中心中評價
+                </h4>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <p>在线人数<span id="userNum"></span></p>
+    </div>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="round hollow text-center">
+                <a id="addClass"><span class="glyphicon glyphicon-comment"></span>開啟聊天室</a>
+            </div>
+            <div class="round hollow text-center">
+                <a id="end"><span class="glyphicon glyphicon-comment">結束交易</span></a>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div class="popup-box chat-popup" id="qnimate">
+        <div class="popup-head">
+            <div class="popup-head-left pull-left"><img
+                    src="../../assets/image/bookPic/picture_1.jpg"
+                    alt="iamgurdeeposahan"> 102403536
+            </div>
+            <div class="popup-head-right pull-right">
+                <button data-widget="remove" id="removeClass" class="chat-header-button pull-right" type="button"><i
+                        class="glyphicon glyphicon-off"></i></button>
+            </div>
+        </div>
+        <div class="popup-messages">
+            <textarea readonly="readonly" class="direct-chat-messages" id="message" rows="10" style="height: 298px; width: 278px;">
+            </textarea>
+            <!-- Message. Default to the left -->
+            <!-- /.direct-chat-msg -->
+            <!-- /.direct-chat-msg -->
+        </div>
+        <div class="popup-messages-footer">
+            <textarea id="input" placeholder="Type a message..." rows="10" cols="40" name="mmessage"></textarea>
+            <div class="btn-footer">
+                <button type="button" class="bg_none pull-right" style="background: cornflowerblue" id="sub">送出訊息
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

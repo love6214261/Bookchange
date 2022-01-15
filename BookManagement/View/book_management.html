@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BookChange</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet" type ="text/css"/>
+</head>
+<script src="../../assets/Js/JQuery2.0.js"></script>
+<script src="../../assets/Js/commonJS.js"></script>
+<script src="../../BookManagement/Js/BookManagement.js"></script>
+<script src="../../MainPage/Js/Main.js"></script>
+<script src="../../assets/Js/bootstrap.min.js"></script>
+
+
+<script>window.onload = getBookArray();</script>
+<body>  
+<!--Navbar-->
+<div id="header"></div>
+<div class="row">
+    <form id="searchbox" align="center" action="">
+        <ul>
+            <select id="searchselect">
+                <option>書名</option>
+                <option>出版社</option>
+                <option>作者</option>
+            </select>
+            <input id="search" type="text" placeholder="想找甚麼書?">
+            <input type="button" class="btn-danger" value="search" onclick="Search()">
+        </ul>
+    </form>
+</div>
+<div class="container">
+    <div role="tabpanel">
+        <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="book">
+                    <div class="table-responsive">
+                        <table class="table" id="table">
+                            <tr>
+                                <th>上架時間</th>
+                                <th>書籍封面</th>
+                                <th>書名</th>
+                                <th>作者</th>
+                                <th>出版社</th>
+                                <th>書籍分類</th>
+                                <th>二手價</th>
+                                <th>狀態</th>
+                                <th></th>
+
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<!---footer-->
+<div id="footer"></div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+[
+  {
+  "bookCover": "嗨嗨",
+  "bookName":"美人",
+  "isbn":"15678531",
+  "editor":"allen",
+  "price":"1235",
+    "publishingHouse":"彭蒙出版",
+    "postDate":"20180206",
+    "class":"管理",
+    "seller":"5"
+  },
+  {
+  "bookCover": "強強嗨",
+  "bookName":"那美人",
+  "isbn":"45665511",
+  "editor":"allenqq",
+  "price":"155",
+    "publishingHouse":"植基出版",
+    "postDate":"20030208",
+    "class":"理工",
+    "seller":"8"
+  }
+]

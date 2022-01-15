@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>台灣囝仔二手書網</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="../../assets/css/sweetalert2.css" rel="stylesheet" type="text/css"/>
+</head>
+<script src="../../assets/Js/sweetalert2.js"></script>
+<script src="../../assets/Js/JQuery.js"></script>
+<script src="../../assets/Js/JQuery2.0.js"></script>
+<script src="../../assets/Js/bootstrap.min.js"></script>
+<script src="../../assets/Js/jquery.blockUI.js"></script>
+<script src="../../assets/Js/commonJS.js"></script>
+<script src="../Js/contactJs.js"></script>
+
+<body>
+<!--Navbar-->
+<div id="header"></div>
+
+<h1 align="center">連絡我們<br/></h1>
+<p align="center">請詳述您遇到的問題，我們會盡快給予您滿意的答覆!</p>
+<hr>
+
+<!--註冊流程-->
+<form >
+    <table class="table">
+        <tbody>
+        <tr>
+            <td>問題類別</td>
+            <td>
+                <select id="ProblemSelect" >
+                    <option value="opinion">意見陳述</option>
+                    <option value="account">帳號問題</option>
+                    <option value="use">使用上的問題</option>
+                    <option value="others">腦袋有問題</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>主旨</td>
+            <td><input type="text" style="border: solid " id="subject"></td>
+        </tr>
+        <tr style="width: 500px; height: 30px">
+            <td>詳述問題/您的寶貴意見</td>
+            <td><textarea placeholder="請盡量詳述您的問題，方便我們快速為您解答喔!"  style="width: 500px; height: 30px"
+                          id="body"></textarea></td>
+        </tr>
+        </tbody>
+    </table>
+    <ul class="actions" style="align-items: center;">
+        <input type="button" value="提交問題"  onclick="submitt()" class="special"/></li>
+        <input type="button" value="回上一頁" onclick="history.back()" class="special"/></li>
+    </ul>
+</form>
+<div id="footer"></div>
+</body>
+</html>

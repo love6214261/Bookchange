@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BookChange</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../../assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="../../../assets/css/sweetalert2.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<script src="../../../assets/Js/sweetalert2.js"></script>
+<script src="../../../assets/Js/JQuery.js"></script>
+<script type="text/javascript" src="../../../assets/Js/JQuery2.0.js"></script>
+<script src="../../../assets/Js/bootstrap.min.js"></script>
+<script src="../../../assets/Js/jquery.blockUI.js"></script>
+<script src="../../Js/active.js"></script>
+<body>
+<!--Navbar-->
+<div id="header"></div>
+<form id="searchbox" align="center" action="">
+    <ul>
+        <select id="select" name="select">
+            <option value="book_name">書名</option>
+            <option value="publishingHouse">出版社</option>
+            <option value="author">作者</option>
+        </select>
+        <input id="search" type="text" placeholder="想找甚麼書?">
+        <input type="button" class="btn-danger" value="search" onclick="Search()">
+    </ul>
+</form>
+<h1 align="center">為了環保，請支持校內二手書流通!<br/></h1>
+
+<!--註冊流程-->
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-4">
+            <div class="contentdiv thumbnail">
+                <div class="circle">
+                    <h1 align="center" style="line-height: 80px">
+                        <i class="fa fa-file-text-o" aria-hidden="true" style="color:white"></i>
+                    </h1>
+                </div>
+                <div class="thumbnail">
+                    <h4 style="text-align:center">
+                        Step1 <br><br>
+                        會員資料填寫
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <div class="contentdiv thumbnail">
+                <div class="circle">
+                    <h1 align="center" style="line-height: 80px">
+                        <i class="fa fa-envelope-o" aria-hidden="true" style="color: white"></i>
+                    </h1>
+                </div>
+                <div class="thumbnail">
+                    <h4 style="text-align:center">
+                        Step2 <br><br>
+                        信箱收取認證信<br><br>回到本頁面輸入驗證碼完成驗證
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <div class="contentdiv thumbnail">
+                <div class="circle">
+                    <h1 align="center" style="line-height: 80px">
+                        <i class="fa fa-check" aria-hidden="true" style="color: white"></i>
+                    </h1>
+                </div>
+                <div class="thumbnail">
+                    <h4 style="text-align:center">
+                        Step3 <br><br>
+                        註冊成功！<br><br>歡迎使用台灣囝仔二手書城！
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--註冊表單-->
+    <div align="center">
+        <form id="Signupform" action="../../MemberController.php?action=connectSignup" method="post">
+            <div class="form-group">
+                <label for="exampleInputEmail1">帳號</label>
+                <input type="number" class="form-control" name="account" required="required" placeholder="輸入帳號" >
+                <label for="exampleInputPassword1">密碼</label>
+                <input type="password" class="form-control" name="password" id="password" required="required" placeholder="Password">
+                <label for="MemberName">會員名稱</label>
+                <input type="text" class="form-control" name="name" required="required" placeholder="會員暱稱">
+                <label for="NameOfUniversity">學校</label>
+                <input type="text" class="form-control" name="school" required="required" placeholder="校名(如:中央大學)">
+                <label for="Class">院所</label>
+                <br>
+                <select name="class">
+                    <option value="管理學院">管理學院</option>
+                    <option value="文學院">文學院</option>
+                    <option value="工學院">工學院</option>
+                    <option value="理學院">理學院</option>
+                    <option value="客家學院">客家學院</option>
+                    <option value="資訊電機學院">資訊電機學院</option>
+                    <option value="地球科學學院">地球科學學院</option>
+                    <option value="生醫理工學院">生醫理工學院</option>
+                    <option value="其他學院">其他學院</option>
+                </select>
+                <br>
+                <label for="Department">科系</label>
+                <input type="text" class="form-control" name="department"  required="required" placeholder="科系(如：資管系)">
+                <label for="InputEmail">學校email</label>
+                <input type="email" class="form-control" name="email1"  placeholder="學校email">
+                <label for="InputEmail">常用email</label>
+                <input type="email" class="form-control" name="email2" id="email2" required="required" placeholder="常用email">
+                <input type="submit" id="submitB" class="btn btn-default" value="送出">
+            </div>
+        </form>
+    </div>
+</div>
+<div id="footer"></div>
+</body>
+</html>

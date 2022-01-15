@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BookChange</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet" type ="text/css"/>
+    <link href="../../assets/css/sweetalert2.css" rel="stylesheet" type="text/css"/>
+</head>
+<script src="../../assets/Js/sweetalert2.js"></script>
+<script src="../../assets/Js/JQuery2.0.js"></script>
+<script src="../../assets/Js/bootstrap.min.js"></script>
+<script src="../../assets/Js/commonJS.js"></script>
+<script src="../Js/BookUpload.js"></script>
+<script src="../../MainPage/Js/Main.js"></script>
+<script src="../../AccountActivity/Js/Login.js"></script>
+<body>
+<!--Navbar-->
+<div id="header"></div>
+<form id="searchbox" align="center" action="">
+    <ul>
+        <select id="searchselect">
+            <option>書名</option>
+            <option>出版社</option>
+            <option>作者</option>
+        </select>
+        <input id="search" type="text" placeholder="想找甚麼書?">
+        <input type="button" class="btn-danger" value="search" onclick="Search()">
+    </ul>
+</form>
+<h1 align="center">為了環保，請支持二手書流通!<br/></h1>
+<!-- <p align="center">沒事多喝水，有事多上廁所</p><hr> -->
+<!--上傳表單-->
+<div class="container">
+    <div align="center">
+        <form role="form">
+            <h2>選擇賣書上傳方式</h2>
+            <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#isbnupload" aria-expanded="true" aria-controls="isbnupload">
+                ISBN上傳
+            </button>
+
+            <div id="isbnupload" class="collapse">
+                <div class="form-group">
+                    <label for="bookISBN">ISBN</label>
+                    <input type="text" class="form-control" id="bookISBN" placeholder="輸入ISBN">
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn btn-default" data-toggle="collapse"  onclick="searchWorldCat()" id="bookSearch" >
+                        輸入
+                    </button>
+                </div>
+
+                <table class="table" id="table">
+                    <caption>上傳書籍</caption>
+                    <tr>
+                        <th>書籍封面</th>
+                        <th>書名</th>
+                        <th>ISBN編號</th>
+                        <th>作者</th>
+                        <th>出版社</th>
+                        <th>書籍分類</th>
+                        <th>二手價</th>
+                        <th>書況</th>
+                    </tr>
+                </table>
+                <button type="button" class="btn btn-default" onclick="uploadBook()" id="upload">送出</button>
+            </div>
+
+
+            或
+
+            <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#handupload" aria-expanded="true" aria-controls="handupload">
+                手動上傳
+            </button>
+
+            <div id="handupload" class="collapse">
+                <div class="form-group">
+                    <label for="bookname">書名</label>
+                    <input type="text" class="form-control" id="bookname" placeholder="輸入書名">
+                </div>
+                <div class="form-group">
+                    <label for="bookauthor">作者</label>
+                    <input type="text" class="form-control" id="bookauthor" placeholder="輸入作者">
+                </div>
+                <div class="form-group">
+                    <label for="bookpublisher">出版社</label>
+                    <input type="text" class="form-control" id="bookpublisher" placeholder="輸入出版社">
+                </div>
+                <div class="form-group">
+                    <label for="bookcategory">書籍分類</label><br>
+                    <select id="bookcategory">
+                        <option></option>
+                        <option value="教科書">教科書</option>
+                        <option value="文學小說">文學小說</option>
+                        <option value="心靈勵志">心靈勵志</option>
+                        <option value="語言/電腦">語言/電腦</option>
+                        <option value="商業類">商業類</option>
+                        <option value="藝術設計">藝術設計</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="twoprice">二手價</label>
+                    <input type="number" class="form-control" id="twoprice" placeholder="我要賣多少">
+                </div>
+                <div class="form-group">
+                    <label for="bookcondition">書本狀態描述</label><br>
+                    <select id="bookcondition">
+                        <option value="接近全新">接近全新</option>
+                        <option value="保存極佳">保存極佳</option>
+                        <option value="保存良好">保存良好</option>
+                        <option value="尚可接受">尚可接受</option>
+                    </select>
+                </div>
+
+                <button type="button" class="btn btn-default" data-toggle="collapse"  onclick="uploadBookTwo()" id="bookSearch2" >
+                    送出
+                </button>
+                </div>
+            <br>
+        </form>
+    </div>
+</div>
+<br>
+
+</div>
+    <!--- 舊版上傳表單
+    <div class="upload">
+
+            <div class="form-group" >
+            <label for="InputISBN">ISBN</label>
+            <input type="text" class="form-control" id="bookISBN" placeholder="書本ISBN">
+            <button type="button" class="btn btn-default" id="bookSearch">送出</button>
+            </div>
+
+    </div>
+        
+    <div class="table-responsive">
+
+            <table class="table"  id="table">
+                <caption>上傳書籍</caption>            
+                <tr>
+                    <th>書籍封面</th>
+                    <th>書籍名稱</th>
+                    <th>書籍類別</th>
+                    <th>ISBN</th>
+                    <th>作者</th>
+                    <th>價格</th>
+                </tr>
+            </table>
+            <button type="button" class="btn btn-default" id="upload">上傳</button>
+
+    </div>  -->
+
+</body>
+</html>

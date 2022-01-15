@@ -1,0 +1,114 @@
+<!doctype html>
+<?php session_start();?>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>台灣囝仔二手書網</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<script src="../../assets/Js/JQuery.js"></script>
+<script src="../../assets/Js/commonJS.js"></script>
+<script src="../Js/Main.js"></script>
+<script src="../../assets/Js/bootstrap.min.js"></script>
+
+<body>
+<!--Navbar-->
+<div id="header"></div>
+<form id="searchbox" align="center" action="">
+    <ul>
+        <select id="searchselect">
+            <option>書名</option>
+            <option>出版社</option>
+            <option>作者</option>
+        </select>
+        <input id="search" type="text" placeholder="想找甚麼書?">
+        <input id="submit" type="submit" value="Search">
+    </ul>
+</form>
+<h1 align="center">為了環保，請支持校內二手書流通!<br/></h1>
+<p align="center">沒事多喝水，有事多上廁所</p>
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a onclick=showBookPage(this.id) id="management"><img class="indexIMG" src="../../assets/image/管理學院.jpg"
+                                                                      alt="..."></a>
+                <div class="caption">
+                    <h3>管理學院</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a onclick=showBookPage(this.id) id="languagement"><img class="indexIMG"
+                                                                        src="../../assets/image/文學院.jpg" 　
+                                                                        alt="..."></a>
+                <div class="caption">
+                    <h3>文學院</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img class="indexIMG" src="../../assets/image/工學院.jpg" alt="...">
+                <div class="caption">
+                    <h3>工學院</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img class="indexIMG" src="../../assets/image/理學院.JPG" alt="...">
+                <div class="caption">
+                    <h3>理學院</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img class="indexIMG" src="../../assets/image/客家學院.JPG" alt="...">
+                <div class="caption">
+                    <h3>客家學院</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img class="indexIMG" src="../../assets/image/資訊電機學院.jpg" alt="...">
+                <div class="caption">
+                    <h3>資訊電機學院</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="../../assets/image/地科學院.JPG" alt="...">
+                <div class="caption">
+                    <h3>地球科學學院</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="../../assets/image/生科.JPG" alt="...">
+                <div class="caption">
+                    <h3>生醫理工學院</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="../../assets/image/圖書館.JPG" alt="...">
+                <div class="caption">
+                    <h3>其他學院</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer id="footer"></footer>
+</body>
+</html>

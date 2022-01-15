@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BookChange</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../../assets/css/bootstrap.css" rel="stylesheet" type ="text/css"/>
+    <link href="../../assets/css/sweetalert2.css" rel="stylesheet" type="text/css"/>
+</head>
+<script src="../../assets/Js/sweetalert2.js"></script>
+<script src="../../../assets/Js/JQuery.js"></script>
+<script src="../../../assets/Js/JQuery2.0.js"></script>
+<script src="../../../assets/Js/bootstrap.min.js"></script>
+<script src="../../Js/memberCommon.js"></script>
+<script src="../../Js/member.js"></script>
+<script>window.onload = getProfile();</script>
+<style>
+    .input{
+        border-width: 1px ;
+        border-color: #1b6d85;
+        width: 80%;
+    }
+</style>
+<body>
+<!--Navbar-->
+<div id="header"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-2">
+                <div id="memberLink"></div>
+            </div>
+            <div class="col-sm-12 col-md-8">
+                <h3>會員基本資料</h3>
+                <form method="post" action="../../MemberController.php?action=connectProfileModified">
+                    <table class="table" >
+                        <thead>
+                        <tr>
+                            <th  style="font-size:18px;">個人資料項目</th>
+                            <th  style="font-size:18px;">內容</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>帳號</td>
+                            <td><input readonly="readonly"  type="text" placeholder="" name="account" id="account" ></td>
+                        </tr>
+                        <tr>
+                            <td>暱稱</td>
+                            <td><input class="input" type="text" value="" name="name" id="name" ></td>
+                        </tr>
+                        <tr>
+                            <td>學校</td>
+                            <td><input class="input" type="text" value="" name="school" id="school" ></td>
+                        </tr>
+                        <tr>
+                            <td>系級</td>
+                            <td><input class="input" type="text" value="" name="department" id="department" ></td>
+                        </tr>
+                        <tr>
+                            <td>學校電子信箱</td>
+                            <td><input readonly="readonly" class="input" type="text" value="" name="email_1" id="email_1" ></td>
+                        </tr>
+                        <tr>
+                            <td>常用電子信箱</td>
+                            <td><input class="input" type="text" value="" name="email_2" id="email_2" ></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <ul class="actions">
+                        <li><input type="submit" value="提交修改" class="special"/></li>
+                        <li><input type="button" value="回上一頁" onclick="history.back()" class="special"/></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+<div id="footer"></div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>

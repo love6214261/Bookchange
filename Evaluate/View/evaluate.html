@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>台灣囝仔二手書網</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet" type ="text/css"/>
+    <link href="../../assets/css/sweetalert2.css" rel="stylesheet" type="text/css"/>
+</head>
+    <script src="../../assets/Js/sweetalert2.js"></script>
+    <script src="../../assets/Js/JQuery.js"></script>
+    <script src="../../assets/Js/commonJS.js"></script>
+    <script src="../../MainPage/Js/Main.js"></script>
+    <script src="../../assets/Js/bootstrap.min.js"></script>
+    <script src="../Js/Evaluate.js"></script>
+<body>
+<div id="header"></div>
+<h1 align="center">為了環保，請支持校內二手書流通!<br/></h1>
+<p align="center">沒事多喝水，有事多上廁所</p><hr>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-3">
+            <div class="thumbnail">
+                <h4 style="text-align:center">
+                    <b>Step1</b> </br>
+                    開啟聊天室，約定面交事宜
+                </h4>
+            </div>
+        </div>
+        <div class="col-md-1">
+            <img src="../../assets/image/Arrow-52.png">
+        </div>
+        <div class="col-xs-12 col-md-3">
+            <div class="thumbnail">
+                <h4 style="text-align:center">
+                    <b>Step2</b></br>
+                    交易結束，按下結束交易鈕
+                </h4>
+            </div>
+        </div>
+        <div class="col-md-1">
+            <img src="../../assets/image/Arrow-52.png">
+        </div>
+        <div class="col-xs-12 col-md-3">
+            <div class="thumbnail">
+                <div class="caption bg-success" style="text-align:center">
+                    <b>Step3</b></br>
+                    在會員中心中評價
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <h3>評價此次交易</h3>
+    <form id="EvaluateForm" action="../EvaluateController.php?action=connectEvaluate" method="post">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <tr>
+                    <th>交易書名</th>
+                    <td id="bookName"></td>
+                </tr>
+                <tr>
+                    <td>買家</td>
+                    <td id="buyerName"></td>
+                    <td><input type="hidden" id="buyer_id"></td>
+                </tr>
+                <tr>
+                    <td>賣家</td>
+                    <td id="sellerName"></td>
+                    <td><input type="hidden" id="seller_id"></td>
+                </tr>
+                <tr>
+                    <th>評分</th>
+                    <td>
+                        <input id="input-7-xs"  class="rating rating-loading" name="score" placeholder="評分:1~10(0.5為間距)" data-min="0" data-max="5" data-step="0.5" data-size="xs" >
+                    </td>
+                </tr>
+                <tr>
+                    <th>交易結果描述</th>
+                    <td>
+                        <input type="radio" name="result" value="正常完成">正常完成<br>
+                        <input type="radio" name="result" value="正常取消">正常取消<br>
+                        <input type="radio" name="result" value="異常取消">異常取消：面交放鳥、不回復訊息<br>
+                        <input type="radio" name="result" value="其他">其他取消原因
+                        <input id="resultarea" type="textarea" name="advice" placeholder="other" style="border:1px  #FFD382 groove">
+                    </td>
+                </tr>
+                <tr>
+                    <th>給對方的評論</th>
+                    <td>
+                        <input type="text" name="advise">
+                    </td>
+                </tr>
+                <tr>
+                    <th><input type="button" class="btn btn-default" value="送出評價" id="pin" ></th>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>

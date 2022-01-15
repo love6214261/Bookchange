@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>台灣囝仔二手書網</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../assets/css/jquery.fullPage.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../../assets/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/animate.css">
+</head>
+<script src="../../assets/Js/JQuery.js"></script>
+<script src="../../assets/Js/JQuery2.0.js"></script>
+<script src="../../assets/Js/commonJS.js"></script>
+<script src="../../assets/Js/JQfullPage.min.js"></script>
+<script type="text/javascript">
+
+ /* $(function () {
+        $("#ido").fullpage();
+    });*/
+ $(document).ready(function() {
+     $('#ido').fullpage({
+         //Navigation
+         menu: '#menu',
+         lockAnchors: false,
+         anchors:['firstPage', 'secondPage'],
+         navigation: true,
+         navigationPosition: 'right',
+         navigationTooltips: ['','Features','Users','Sign up'],
+         showActiveTooltip: false,
+         slidesNavigation: true,
+         slidesNavPosition: 'bottom',
+
+         //Scrolling
+         css3: true,
+         scrollingSpeed: 700,
+         autoScrolling: true,
+         fitToSection: true,
+         fitToSectionDelay: 1000,
+         scrollBar: false,
+         easing: 'easeInOutCubic',
+         easingcss3: 'ease',
+         loopBottom: false,
+         loopTop: false,
+         loopHorizontal: true,
+         continuousVertical: false,
+         normalScrollElements: '#element1, .element2',
+         scrollOverflow: false,
+         scrollOverflowOptions: null,
+         touchSensitivity: 15,
+         normalScrollElementTouchThreshold: 5,
+         bigSectionsDestination: null,
+
+         //Accessibility
+         keyboardScrolling: true,
+         animateAnchor: true,
+         recordHistory: true,
+
+
+         //Custom selectors
+         sectionSelector: '.section',
+         slideSelector: '.slide',
+
+         //events
+         onLeave: function(index, nextIndex, direction){},
+         afterLoad: function(anchorLink, index){},
+         afterRender: function(){},
+         afterResize: function(){},
+         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+     });
+ });
+
+</script>
+
+<style type="text/css"> </style>
+
+<body style="text-align: center">
+
+<div id="ido" class="animation">
+
+    <div class="section "id="sec0" align="center">
+       <img  class="img-responsive " src="../../assets/image/brandIMG.jpg">
+        <h1 style="color:white " class="animated  bounceInRight ">愛地球，跟台灣囝仔一起支持二手書流通！</h1>
+        <br> <br> <br> <br>
+    </div>
+    <div class="section" id="sec1">
+        <h3  style="color: black">為大學內每一位用書人所設計。</h3>
+        <h4 style="color: black">四大特色，滿足學生、老師，買賣、租書的需求。</h4>
+        <br>
+        <div class="container">
+            <hr class="strong-hr" >
+             <div class="row">
+                 <div class="col-sm-6 col-md-3">
+                     <img  src="../../assets/image/welcomePage/Meeting.png">
+                     <h3>0 運費交易</h3>
+                     <p class="text-justify ">受夠尋常交易平台高昂的運費成本？TWC拒絕收取您一分一毫的運費成本，用<u>面交</u>的方式，
+                         免去繁瑣物流，保證書況！</p>
+                     <br>
+                 </div>
+                 <div class="col-sm-6 col-md-3">
+                     <img  src="../../assets/image/welcomePage/Smartphone.png">
+                     <h3>智慧型上傳書籍</h3>
+                     <p class="text-justify ">再也不需要一本本上傳書籍、填書況，只要連動
+                         <a href="#">PhoneCam APP</a>幫書櫃拍張照、輸入ISBN，智慧上傳好方便。
+                     </p>
+                     <br>
+                 </div>
+                 <div class="col-sm-6 col-md-3">
+                     <img src="../../assets/image/welcomePage/Leaf.png">
+                     <h3>創新式電子租書</h3>
+                     <p class="text-justify ">有些課本用過一次就再也用不到了？有些捨不得賣掉但平常擺著生書蟲的課本嗎？
+                         TWC的<u>電子租書</u>能大大的幫助您！</p>
+                     <br>
+                 </div>
+                 <div class="col-sm-6 col-md-3">
+                     <img src="../../assets/image/welcomePage/Map.png">
+                     <h3>人性化分類</h3>
+                     <p class="text-justify "><u>學院分類</u>、 <u>新生專區</u>、 <u>系所地圖</u>
+                         都是TWC為了更方便您找書的智慧結晶。 讓您在我們的網站上，能輕鬆按照院別、年紀</p>
+                     <br>
+             </div>
+             </div>
+            <hr class="strong-hr" >
+        <br> <br> <br> <br>
+            <div class="animated bounce infinite" >
+                <img src="../../assets/image/welcomePage/CircledDown.png">
+            </div>
+        </div>
+    </div>
+    <div class="section" id="sec2">
+        <h3  style="color: black">你是哪種用書人？</h3>
+        <hr class="triband-hr" >
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4" >
+                    <a><h3 style="color:  #7ec0eb"><img  src="../../assets/image/welcomePage/SellProperty.png" width="10%" height="10%">賣書人</h3></a>
+                    <br>
+                    <h4>快速上傳、快速交易</h4>
+                    <h4> 0運費、最高利潤</h4>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <a><h3 style="color:  #f39c12"><img src="../../assets/image/welcomePage/Shopping.png" width="10%" height="10%">買書人</h3></a>
+                    <br>
+                    <h4>快速比價、資訊最齊全</h4>
+                    <h4>賣家評價更安心</h4>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <a><h3 style="color:  #2ecc71"><img src="../../assets/image/welcomePage/Leafsmall.png" width="10%" height="10%">租書人</h3></a>
+                    <br>
+                    <h4>書籍重複出租、利潤最大化</h4>
+                    <h4>滿足短期即時書籍需求</h4>
+                </div>
+            </div>
+        </div>
+        <hr class="triband-hr" >
+        <div class="animated infinite bounce">
+            <img src="../../assets/image/welcomePage/CircledDown.png">
+        </div>
+    </div>
+    <div class="section fp-auto-height " id="sec3">
+             <h3 style="color: black; ">現在立刻註冊 <img width="10%"; height="10%"  src="../../assets/image/brandIMG.jpg "></h3>
+            <br> <br> <br> <br>
+            <a href="#"><button class="btn btn-info"style="">sign up</button></a>
+        <br> <br><br> <br><br> <br><br> <br><br>
+        <div id="footer"></div>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>

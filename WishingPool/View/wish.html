@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BookChange</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="../../assets/css/sweetalert2.css" rel="stylesheet" type="text/css"/>
+</head>
+<script src="../../assets/Js/sweetalert2.js"></script>
+<script src="../../assets/Js/JQuery.js"></script>
+<script src="../../assets/Js/JQuery2.0.js"></script>
+<script src="../../assets/Js/bootstrap.min.js"></script>
+<script src="../../assets/Js/commonJS.js"></script>
+<script src="../Js/WishingPool.js"></script>
+
+<body>
+<!--Navbar-->
+<div id="header"></div>
+<form id="searchbox" align="center" action="">
+    <ul>
+        <select id="select" name="select">
+            <option value="book_name">書名</option>
+            <option value="publishingHouse">出版社</option>
+            <option value="author">作者</option>
+        </select>
+        <input id="search" type="text" placeholder="想找甚麼書?">
+        <input type="button" class="btn-danger" value="search" onclick="Search()">
+    </ul>
+</form>
+<h1 align="center">為了環保，請支持二手書流通!<br/></h1>
+<!-- <p align="center">沒事多喝水，有事多上廁所</p> -->
+<hr>
+
+<!--許願流程-->
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-4">
+            <div class="thumbnail">
+                <h4 style="text-align=center">
+                    Step1 </br>
+                    許願
+                </h4>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <div class="thumbnail">
+                <h4 style="text-align=center">
+                    Step2 </br>
+                    等待媒合
+                </h4>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <div class="thumbnail">
+                <h4 style="text-align=center">
+                    Step3 </br>
+                    進入交易
+                </h4>
+            </div>
+        </div>
+
+    </div>
+    <!--註冊表單-->
+    <div class="col-md-3">
+    </div>
+    <div class="col-xs-12 col-md-6" align="center">
+        <form>
+            <br class="form-group">
+            <label for="InputBookname">書名</label>
+            <input type="text" class="form-control" id="book_name" placeholder="請盡量填寫完整書名">
+            <label for="exampleInputPassword1">作者</label>
+            <input type="text" class="form-control" id="book_author" placeholder="請輸入作者名稱">
+            <label for="MemberName">ISBN(不知道可以不填)</label>
+            <input type="text" class="form-control" id="book_isbn" placeholder="ISBN(通常10、13個數字)">
+            <label for="NameOfUniversity">出版社</label>
+            <input type="text" class="form-control" id="book_publishinghouse" placeholder="哪家出版社的呢?">
+            <label for="InputEmail">書況要求(請詳述您對於媒合之書況要求 e.g.不能有污漬、摺頁)</label>
+            </br>
+            <select id="book_condition">
+                <option value="接近全新">接近全新</option>
+                <option value="保存極佳">保存極佳</option>
+                <option value="保存良好">保存良好</option>
+                <option value="尚可接受">尚可接受</option>
+            </select>
+            </br>
+            <label for="InputEmail">希望價碼</label>
+            <input type="number" class="form-control" id="book_twoprice" placeholder="請設置您能接受的最高開價">
+
+            <input type="button" class="btn btn-default" onclick="wishExec()" value="送出">
+        </form>
+    </div>
+    <div class="col-md-3">
+    </div>
+</div>
+</div>
+<div id="footer"></div>
+</body>
+</html>

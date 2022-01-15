@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BookChange</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="../../assets/css/sweetalert2.css" rel="stylesheet" type="text/css"/>
+</head>
+<script src="../../assets/Js/sweetalert2.js"></script>
+<script src="../../assets/Js/JQuery.js"></script>
+<script src="../../assets/Js/JQuery2.0.js"></script>
+<script src="../../assets/Js/bootstrap.min.js"></script>
+<script src="../../assets/Js/commonJS.js"></script>
+<script src="../Js/Login.js"></script>
+<script src="../Js/fbLogin.js"></script>
+<body>
+<!--Navbar-->
+<div id="header"></div>
+<form id="searchbox" align="center" action="">
+    <ul>
+        <select id="select" name="select">
+            <option value="book_name">書名</option>
+            <option value="publishingHouse">出版社</option>
+            <option value="author">作者</option>
+        </select>
+        <input id="search" type="text" placeholder="想找甚麼書?">
+        <input type="button" class="btn-danger" value="search" onclick="Search()">
+    </ul>
+</form>
+<h1 align="center">為了環保，請支持二手書流通!<br/></h1>
+<!-- <p align="center">沒事多喝水，有事多上廁所</p><hr> -->
+<!--登入表單-->
+<div class="container">
+<div align="center">
+    <form name="LoginForm" method="post" action="../loginController.php?action=connectAccount">
+        <div class="form-group">
+            <label for="InputAccount">帳號</label>
+            <input type="text" class="form-control"  placeholder="輸入帳號" name="user">
+            <label for="InputPassword1">密碼</label>
+            <input type="password" class="form-control"  placeholder="輸入密碼" name="password"></br>
+            <!--用id 就不會在網址上面顯示了，但是用name會-->
+            <input name="submit" type="submit" class="btn btn-default" value="送出" >
+
+        </div>
+    </form>
+</div>
+</div>
+<!--<div id="footer"></div>-->
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>websocket聊天室</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.min.css">
+    <link href="../css/jquery.ui.chatbox.css" rel="stylesheet" type="text/css"/>
+</head>
+<script src="../../assets/Js/JQuery.js"></script>
+<script src="../../assets/Js/JQuery2.0.js"></script>
+<script src="../../assets/Js/bootstrap.js"></script>
+<script src="../Js/jquery.ui.chatbox.js"></script>
+<script src="../Js/ChatUpload.js"></script>
+<script src="../Js/ChatroomConfirm.js"></script>
+<body>
+<div class="container">
+    <p>在线人数<span id="userNum"></span></p>
+</div>
+<div class="container text-center">
+    <div class="row">
+        <h2>Open in chat (popup-box chat-popup)</h2>
+        <h4>Click Here</h4>
+        <div class="round hollow text-center">
+            <a href="#" id="addClass"><span class="glyphicon glyphicon-comment"></span> Open in chat </a>
+        </div>
+        <hr>
+    </div>
+</div>
+
+
+<div class="popup-box chat-popup" id="qnimate">
+    <div class="popup-head">
+        <div class="popup-head-left pull-left"><img
+                src="../../assets/image/bookPic/picture_1.jpg"
+                alt="iamgurdeeposahan"> 102403536
+        </div>
+        <div class="popup-head-right pull-right">
+            <button data-widget="remove" id="removeClass" class="chat-header-button pull-right" type="button"><i
+                    class="glyphicon glyphicon-off"></i></button>
+        </div>
+    </div>
+    <div class="popup-messages">
+            <textarea class="direct-chat-messages" id="message" rows="10" style="height: 298px; width: 278px;" >
+            </textarea>
+            <!-- Message. Default to the left -->
+            <!-- /.direct-chat-msg -->
+            <!-- /.direct-chat-msg -->
+    </div>
+    <div class="popup-messages-footer">
+        <textarea id="input" placeholder="Type a message..." rows="10" cols="40" name="mmessage"></textarea>
+        <div class="btn-footer">
+            <button type="button" class="bg_none pull-right" style="background: cornflowerblue" id="sub">送出訊息</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

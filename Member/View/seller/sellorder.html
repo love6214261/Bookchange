@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BookChange</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../../assets/css/bootstrap.css" rel="stylesheet" type ="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../../../assets/Js/bootstrap.min.js"></script>
+    <link href="../../../assets/css/sweetalert2.css" rel="stylesheet" type="text/css"/>
+</head>
+<script src="../../../assets/Js/sweetalert2.js"></script>
+<script src="../../../assets/Js/JQuery.js"></script>
+<script src="../../../assets/Js/JQuery2.0.js"></script>
+<script src="../../../assets/Js/bootstrap.min.js"></script>
+<script src="../../Js/SellerOrder.js"></script>
+<script src="../../Js/memberCommon.js"></script>
+<!--<script-- src="../Js/member.js"></script>>-->
+<body>
+<div id="header"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-2">
+            <div id="memberLink"></div>
+        </div>
+        <div class="col-sm-12 col-md-8">
+    <div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist" id="tradecondition">
+      <li role="presentation" class="active"><a onclick="uploading()" aria-controls="home" role="tab" data-toggle="tab">待售中</a></li>
+      <li role="presentation"><a onclick="trading()" aria-controls="profile" role="tab" data-toggle="tab">交易中</a></li>
+      <li role="presentation"><a onclick="evaluating()" aria-controls="selled" role="tab" data-toggle="tab">評價中</a></li>
+      <li role="presentation"><a onclick="successtrade()" aria-controls="end" role="tab" data-toggle="tab">交易成功</a></li>
+      <li role="presentation"><a onclick="failtrade()" aria-controls="end" role="tab" data-toggle="tab">交易失敗</a></li>
+   
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+        <div class="table-responsive">
+            <caption>銷售訂單管理</caption>
+            <table class="table" id="table">
+            </table>
+        </div>
+      </div>
+  </div>
+</div>
+            </div>
+        </div>
+  </div>
+<div id="footer"></div>
+</body>
+</html>

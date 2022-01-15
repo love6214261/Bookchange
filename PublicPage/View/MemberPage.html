@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>台灣囝仔二手書網</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet" type ="text/css"/>
+</head>
+<script src="../../assets/Js/JQuery.js"></script>
+<script src="../../assets/Js/JQuery2.0.js"></script>
+<script src="../../assets/Js/bootstrap.min.js"></script>
+<script src="../../assets/Js/commonJS.js"></script>
+<script src="../Js/PublicPage.js"></script>
+<body>
+<!--Navbar-->
+<div id="header"></div>
+<div class="container">
+    <br><br><br>
+    <div class="row">
+        <div class="col-sm-12 col-md-2">
+            <li><h4 id="member_name"></h4></li>
+            <li><h4 id="member_school"></h4></li>
+            <li><h4 id="member_department"></h4></li>
+            <li><h4 id="member_score"></h4></li>
+            <section>
+                <button type="button"  class="btn btn-link" data-toggle="collapse" data-target="#membercenter" aria-expanded="true" aria-controls="membercenter">會員中心</button>
+                <div id="membercenter" class="collapse ">
+                    <li><a href="../MemberController.php?action=ShowProfilePage" >修改個人資料</a></li>
+                    <li><a href="../MemberController.php?action=ShowChangePassword">修改密碼</a></li>
+                    <li><a href="../MemberController.php?action=ShowChatRoomInfo">訊息匣</a></li>
+                    <li><a href="../MemberController.php?action=ShowWishList">許願池管理</a></li>
+                    <li><a href="../MemberController.php?action=ShowViolation">我的回饋/違規紀錄</a></li>
+                    <li><a href="../MemberController.php?action=ShowActivePage">開通帳號</a></li>
+                </div>
+                <br>
+                <button type="button"  class="btn btn-link" data-toggle="collapse" data-target="#buyercenter" aria-expanded="true" aria-controls="buyercenter">買家專區</button>
+
+                <div id="buyercenter" class="collapse ">
+                    <li><a href="../MemberController.php?action=ShowBuyOrder">購買訂單查詢</a></li>
+                    <li><a href="../MemberController.php?action=ShowFollowList">我的追蹤清單</a></li>
+                </div>
+                <br>
+                <button type="button"  class="btn btn-link" data-toggle="collapse" data-target="#sellercenter" aria-expanded="true" aria-controls="sellercenter">賣家專區</button>
+
+                <div id="sellercenter" class="collapse ">
+                    <li><a href="../MemberController.php?action=ShowSellerOrderPage">銷售訂單查詢</a></li>
+                    <li><a href="../MemberController.php?action=ShowUploadBookManagement">上架書籍管理</a></li>
+                </div>
+            </section>
+        </div>
+        <div class="col-sm-12 col-md-9 col-md-offset-1">
+            <div role="tabpanel">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#uploaded" aria-controls="uploaded" role="tab" data-toggle="tab">該會員的評價</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="uploaded">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <tr>
+                                    <th>評價</th>
+                                    <th>評論</th>
+                                    <th>交易狀態</th>
+                                    <th>評價日期</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div><br><br><br><br><br><br><br>
+<div id="footer"></div>
+</body>
+</html>

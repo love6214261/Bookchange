@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BookChange</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../../assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="../../assets/css/sweetalert2.css" rel="stylesheet" type="text/css"/>
+</head>
+<script src="../../assets/Js/sweetalert2.js"></script>
+<script src="../../../assets/Js/JQuery.js"></script>
+<script src="../../../assets/Js/JQuery2.0.js"></script>
+<script src="../../../assets/Js/bootstrap.min.js"></script>
+<script src="../../Js/memberCommon.js"></script>
+<body>
+<!--Navbar-->
+<div id="header"></div>
+<div id="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-2 ">
+                <div id="memberLink"></div>
+            </div>
+            <form id="form_chpwd">
+                <div id="table_chpwd">
+                    <div class="col-sm-12 col-md-10">
+                        <h2>修改密碼</h2>
+                        <p>您可在下方欄位修改您的密碼，下一次便可使用新的密碼登入會員專區</p>
+                        <table class="table table-striped">
+                            <tr>
+                                <th>舊密碼</th>
+                                <td><input type="text" id="oldPassword">請輸入原始密碼</td>
+                            </tr>
+                            <tr>
+                                <th>新密碼</th>
+                                <td><input type="text" id="newPassword">8-12碼，至少包含兩個數字及字母</td>
+                            </tr>
+                            <tr>
+                                <th>請再輸入一次新密碼</th>
+                                <td><input type="text" id="newPasswordChk"></td>
+                            </tr>
+
+                        </table>
+                        <button onclick="changePwd()">確定修改</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<br>
+<footer id="footer"></footer>
+
+</body>
+</html>

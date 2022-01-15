@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BookChange</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+</head>
+<script src="../../assets/Js/JQuery.js"></script>
+<script src="../../assets/Js/JQuery2.0.js"></script>
+<script src="../../assets/Js/bootstrap.min.js"></script>
+<script src="../../assets/Js/commonJS.js" ;></script>
+<script src="../Js/Main.js"></script>
+<script src="../Js/searchJS.js" ;></script>
+
+<body>
+<!--Navbar-->
+<div id="header"></div>
+<form id="searchbox" align="center" action="">
+    <ul>
+        <select id="select" name="select">
+            <option value="book_name">書名</option>
+            <option value="publishingHouse">出版社</option>
+            <option value="author">作者</option>
+        </select>
+        <input id="search" type="text" placeholder="想找甚麼書?">
+        <input type="button" value="search" onclick="Search()">
+    </ul>
+</form>
+<h1 align="center">為了環保，請支持校內二手書流通!<br/></h1>
+<p align="center">沒事多喝水，有事多上廁所</p><hr>
+
+
+<div class="container">
+    <form>
+        <table class="table" id="table">
+            <tr>
+                <td id="bookCover">書籍封面</td>
+                <td id="bookName">書名</td>
+                <td id="author">作者</td>
+                <td id="publishinghouse">出版社</td>
+                <td id="twoprice">二手價格</td>
+                <td></td>
+            </tr>
+
+        </table>
+    </form>
+    <nav align="center">
+        <ul class="pagination">
+            <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
+        </ul>
+    </nav>
+</div>
+<div id="footer"></div>
+</body>
+</html>

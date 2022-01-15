@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BookChange</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+</head>
+<script src="../../assets/Js/JQuery.js"></script>
+<script src="../../assets/Js/JQuery2.0.js"></script>
+<script src="../../assets/Js/bootstrap.min.js"></script>
+<script src="../../assets/Js/commonJS.js" ;></script>
+<body>
+<!--Navbar-->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html" onclick="">BookChange</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right">
+            <ul class="newMenu nav navbar-nav">
+                <li><a onclick="ShowActivity()">活動專區</a></li>
+                <li><a onclick="ShowPoolPage()">許願池</a></li>
+                <li><a onclick="ShowUploadBookPage()">我要賣書</a></li>
+                <li><p id="name" style="font-size: large "></p></li>
+                <li><a onclick="ShowLoginPage()" id="loginButton">登入</a></li>
+                <li><a onclick="ShowSignUpPage()" id="signUpButton">註冊</a></li>
+                <li><a onclick="ShowMemberCenter()">會員中心</a></li>
+                <li><a onclick="ShowChatroomPage()">聊天室</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <span class="glyphicon glyphicon-plus"></span></a>
+                    <ul class="dropdown-menu dropdown-plus" role="menu">
+                        <li>
+                  <span class="item">
+                    <span class="item-left">
+                        <img src="#" alt="" />
+                        <span class="item-info">
+                            <span>書籍名稱</span>
+                            <span>$150</span>
+                        </span>
+                    </span>
+                    <span class="item-right">
+                        <button class="btn btn-xs btn-danger pull-right">x</button>
+                    </span>
+                </span>
+                        </li>
+                        <li>
+                  <span class="item">
+                    <span class="item-left">
+                        <img src="#" alt="" />
+                        <span class="item-info">
+                            <span>書籍名稱</span>
+                            <span>$400</span>
+                        </span>
+                    </span>
+                    <span class="item-right">
+                        <button class="btn btn-xs btn-danger pull-right">x</button>
+                    </span>
+                </span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+
+    </div><!-- /.container-fluid -->
+
+</nav>
+<form id="searchbox" align="center" action="">
+    <ul>
+        <select id="select" name="select">
+            <option value="book_name">書名</option>
+            <option value="publishingHouse">出版社</option>
+            <option value="author">作者</option>
+        </select>
+        <input id="search" type="text" placeholder="想找甚麼書?">
+        <input id="submit" type="submit" value="Search">
+    </ul>
+</form>
+<h1 align="center">為了環保，請支持校內二手書流通!<br/></h1>
+<p align="center">沒事多喝水，有事多上廁所</p><hr>
+
+<div class="container">
+    <form>
+        <table class="table table-striped">
+            <tbody>
+            <tr>
+                <th>封面照</th>
+                <th>書名</th>
+                <th>ISBN</th>
+                <th>作者</th>
+                <th>出版社</th>
+                <th>賣家名稱</th>
+                <th>狀態</th>
+            </tr>
+            <tr>
+                <td>
+                    <a href="bookinfo.html"><img class="bookIMG" src="../../assets/image/bookpic.jpg"></a>
+                </td>
+                <td>賢者之愛</td>
+                <td>9789861794525</td>
+                <td>三田詠美</td>
+                <td>大田</td>
+                <td>王大明</td>
+                <td>出售中</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+    <nav align="center">
+        <ul class="pagination">
+            <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
+        </ul>
+    </nav>
+</div>
+</body>
+</html>
